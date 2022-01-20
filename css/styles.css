@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+}
+nav{
+    height: 5%;
+    background-color:blue;
+}
+
+.nav{
+    background-color: black;
+    
+}
+
+ul li{
+    float:left;
+    padding: 2rem;
+    list-style-type: none;
+}
+
+header{
+    position:absolute;
+}
+.header{
+    height: 100vh;
+}
+
+
+h1{
+    position: relative;
+    top:50%;
+    left:50%;
+   
+    display:inline-block;
+    background-color: red;
+
+}
+
