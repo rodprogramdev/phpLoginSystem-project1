@@ -36,16 +36,18 @@ a{
 
 .header{
     height: 100vh;
-   
+    background-image: url("../images/selfdefense.jpg");
+    background-size: cover;
+    background-position: center;
+    margin:-0.3rem 0;
    
 }
 
 
-h1{
-    
-   
+h1{  
     display:inline-block;
     font-size: 5rem;
+    color: white;
 
 }
 
@@ -55,13 +57,24 @@ h1{
     }
 }
 
-
-
 .header__heading{
+    display:inline-block;
+    width: 100%;
     position: relative;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
+}
+
+.header__heading--primary{
+    display:inline-block;
+    width:80%;
+}
+
+
+.header__heading--secondary{
+    display:inline-block;
+    
 }
 
 /********************SIGN UP FORM************************/
@@ -81,9 +94,6 @@ h1{
     padding: 2rem;
     background-color: red;
     height: 100%;
-    
-   
-    
 }
 
 .signupForm__input{
