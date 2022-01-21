@@ -49,3 +49,13 @@ h1{
     transform:translate(-50%,-50%);
 }
 
+/********************SIGN UP FORM************************/
+
+.signupForm{
+    margin: 5rem 0;
+    height: 60vh;
+    width: 50vh;
+    background-color: white;
+    display:inline-block;
+}
+
