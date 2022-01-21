@@ -1,3 +1,5 @@
+
+
 *{
     margin:0;
     padding:0;
@@ -6,38 +8,52 @@
 
 body{
     text-align: center;
+    background-color:lightsalmon;
+   
+
 }
+
 nav{
-    height: 5%;
-    background-color:blue;
+    
+    display:inline-block;
+    background: #777;
+    height: 3rem;
+    
 }
 
 .nav{
+    display:inline-block;
     background-color: black;
-    
+   
+   
 }
 
 ul li{
     float:left;
-    padding: 2rem;
+    padding: 1rem;
     list-style-type: none;
 }
 
-header{
-    position:absolute;
-}
+
+
 .header{
     height: 100vh;
+   
 }
 
 
 h1{
-    position: relative;
-    top:50%;
-    left:50%;
+    
    
     display:inline-block;
     background-color: red;
 
+}
+
+.header__heading{
+    position: relative;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
 }
 
