@@ -9,7 +9,7 @@
 body{
     text-align: center;
     background-color:lightsalmon;
-   
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -45,9 +45,17 @@ h1{
     
    
     display:inline-block;
-    background-color: red;
+    font-size: 5rem;
 
 }
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+
 
 .header__heading{
     position: relative;
