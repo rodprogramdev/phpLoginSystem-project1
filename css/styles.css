@@ -13,17 +13,10 @@ body{
 
 }
 
-nav{
-    
+.navigation{
     display:inline-block;
     background: #777;
-    height: 3rem;
-    
-}
-
-.nav{
-    display:inline-block;
-    background-color: black;
+    width:100%;
    
    
 }
@@ -34,10 +27,9 @@ ul li{
     list-style-type: none;
 }
 
-
-
 .header{
     height: 100vh;
+   
    
 }
 
