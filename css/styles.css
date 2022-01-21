@@ -57,5 +57,17 @@ h1{
     width: 50vh;
     background-color: white;
     display:inline-block;
+   
+}
+
+.signupForm__form{
+    padding: 2rem;
+    background-color: red;
+    height: 100%;
+}
+
+.signupForm__input{
+    padding: 2%;
+    margin: 2%;
 }
 
