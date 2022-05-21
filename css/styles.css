@@ -107,3 +107,33 @@ h1{
     margin: 2%;
 }
 
+
+/********************Log In FORM************************/
+
+
+.loginForm{
+    margin: 5rem 0;
+    height: 60vh;
+    width: 50vh;
+    /* background-color: white; */
+    display:inline-block;
+    box-shadow: 5px 40px 15px  black;
+    border-radius: 1.5rem;
+   
+}
+
+.loginForm__form{
+    padding: 2rem;
+    background-color: rgb(255, 0, 0);
+    height: 100%;
+    border-radius: .5rem;
+}
+
+.loginForm__input{
+    padding: 5%;
+    margin: 14%;
+}
+
+.loginForm__button{
+    padding: 5% 15% 5% 15%;
+}
