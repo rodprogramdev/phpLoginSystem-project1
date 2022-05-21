@@ -22,7 +22,7 @@
             <input  class="signupForm__input" type="text" name="uid" placeholder="Username">
             <input  class="signupForm__input" type="password" name="pwd" placeholder="Password">
             <input  class="signupForm__input" type="password" name="pwdrepeat" placeholder="Repeat Password"><br>
-            <button type="submit" name="submit">Sign Up</button>
+            <button class="signupForm__button" type="submit" name="submit">Sign Up</button>
 
         </form>
     </div>
