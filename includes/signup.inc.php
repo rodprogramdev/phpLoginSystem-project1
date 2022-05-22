@@ -16,8 +16,30 @@ if(isset($_POST["submit"])){
     if(emptyInputSignup($name,$email,$username,$pwd,$pwdRepeat) !== false){
         header("location: ../signup.php?error=emptyinput"); // going to redirect the user back to the signup page.
         exit();//going to stop the script from running;
-
     }
+
+    if(invalidUid($username) !== false){
+        header("location: ../signup.php?error=invaliduid"); // going to redirect the user back to the signup page.
+        exit();//going to stop the script from running;
+    }
+
+    if(invalidEmail($email) !== false){
+        header("location: ../signup.php?error=invalidemail"); // going to redirect the user back to the signup page.
+        exit();//going to stop the script from running;
+    }
+
+    if(pwdMatch($pwd,$pwdRepeat) !== false){
+        header("location: ../signup.php?error=passwordsdontmatch"); // going to redirect the user back to the signup page.
+        exit();//going to stop the script from running;
+    }
+
+    if(uidExists($conn,$username, $email) !== false){
+        header("location: ../signup.php?error=usernametaken"); // going to redirect the user back to the signup page.
+        exit();//going to stop the script from running;
+    }
+
+    createUser($conn, $name, $email, $username, $pwd);
+
 
 
 }
