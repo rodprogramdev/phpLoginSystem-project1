@@ -13,8 +13,8 @@ if(isset($_POST["submit"])){
 
     //add errors when user forget something into the input
     // functions that will return a true or false function
-    if(emptyInputSignup() !== false){
-        header("location: ../signup.php"); // going to redirect the user back to the signup page.
+    if(emptyInputSignup($name,$email,$username,$pwd,$pwdRepeat) !== false){
+        header("location: ../signup.php?error=emptyinput"); // going to redirect the user back to the signup page.
         exit();//going to stop the script from running;
 
     }
