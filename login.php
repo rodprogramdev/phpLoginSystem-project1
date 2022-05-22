@@ -19,7 +19,7 @@
         <form class="loginForm__form" action="login.inc.php" method="POST">
             <input class="loginForm__input" type="text" name="name" placeholder="Username/Email">
             <input class="loginForm__input" type="password" name="pwd" placeholder="Password">
-            <button class="loginForm__button" type="submit" name="submit">Login</button>
+            <button class="loginForm__button" type="submit" name="submit">Log In</button>
 
         </form>
     </div>
