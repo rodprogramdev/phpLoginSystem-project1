@@ -11,8 +11,17 @@ if(isset($_POST["submit"])){
     require_once 'dbh.inc.php';
     require_once 'functions.inc.php';
 
+    //add errors when user forget something into the input
+    // functions that will return a true or false function
+    if(emptyInputSignup() !== false){
+        header("location: ../signup.php"); // going to redirect the user back to the signup page.
+        exit();//going to stop the script from running;
+
+    }
+
 
 }
 else{
     header("location: ../signup.php");
+    exit();//going to stop the script from running;
 }
