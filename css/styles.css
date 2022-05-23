@@ -60,6 +60,12 @@ h1{
     }
 }
 
+h2{
+    display:inline-block;
+    font-size: 2rem;
+    color: white;
+}
+
 .header__heading{
     display:inline-block;
     width: 50%;
@@ -141,4 +147,11 @@ h1{
 
 .loginForm__button{
     padding: 5% 15% 5% 15%;
+}
+
+
+.hello__para{
+    background-color: rgba(0, 0, 255, 0.539);
+    color: white;
+    font-size: 15px;
 }

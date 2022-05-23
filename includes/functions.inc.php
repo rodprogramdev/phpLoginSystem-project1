@@ -57,7 +57,7 @@
        mysqli_stmt_bind_param($stmt,"ss", $username, $email);
        mysqli_stmt_execute($stmt);
 
-       $resultData = mysqli_stmt_get_result();
+       $resultData = mysqli_stmt_get_result($stmt);
        
        if($row = mysqli_fetch_assoc($resultData)){
            return $row;
@@ -89,7 +89,6 @@
          mysqli_stmt_close($stmt);
          header("location: ../signup.php?error=none");
          exit();
-       
       }
 
 
@@ -106,7 +105,7 @@
   
 
     function loginUser($conn, $username, $pwd){
-        $uidExists = uidExists($conn,$username, $username);
+        $uidExists = uidExists($conn, $username, $username);
 
         if($uidExists === false){
             header("location: ../login.php?error=wronglogin");
