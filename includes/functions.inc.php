@@ -92,7 +92,45 @@ function emptyInputSignup($name,$email,$username,$pwd,$pwdRepeat){
          exit();
        
       }
+
+
+      function emptyInputLogin($username,$pwd){
+        $result;
+        if(empty($username) || empty($pwd)){ //empty built in function
+            $result = true;
+        }
+        else{
+            $result =false;
+        }
+        return $result;
+    }
   
+
+    function loginUser($conn, $username, $pwd){
+        $uidExists = uidExists($conn,$username, $username);
+
+        if($uidExists === false){
+            header("location: ../login.php?error=wronglogin");
+            exit();
+        }
+
+        $pwdHashed = $uidExists["usersPwd"];// associative arrays using names in database
+        $checkPwd = password_verify($pwd, $pwdHashed);
+
+        if($checkPwd === false){
+            header("location: ../login.php?error=wronglogin");
+            exit();
+        }
+        else if($checkPwd === true){
+            //sessions - information that we can grab onto
+            session_start();
+            //session variables super global
+            $_SESSION["userid"] = $uidExists["usersId"];
+            $_SESSION["useruid"] = $uidExists["usersUid"];
+            header("location: ../index.php");
+            exit();
+        }
+    }
 
 
 
