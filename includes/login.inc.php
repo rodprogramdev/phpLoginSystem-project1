@@ -8,8 +8,8 @@ if(isset($_POST["submit"])){ // check user if accessed the proper way
     require_once 'functions.inc.php';
 
     if(emptyInputLogin($username,$pwd) !== false){
-        header("location: ../login.php?error=emptyinput"); // going to redirect the user back to the signup page.
-        exit();//going to stop the script from running;
+        header("location: ../login.php?error=emptyinput"); 
+        exit();
     }
 
         loginUser($conn, $username, $pwd);

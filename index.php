@@ -13,6 +13,15 @@ include_once 'header.php';
         </h1>
     </div>
 </div>
+<section>   
+            <?php
+             if(isset($_SESSION["useruid"])){ // show something depending if the user is login or not
+                echo "<p>Hello there " . $_SESSION["useruid"] . "</p>";
+              
+             }
+           
+            ?>
+</section>
 
     
 
