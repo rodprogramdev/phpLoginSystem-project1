@@ -22,14 +22,14 @@
         <ul>
             <li><a href="index.php">HOME</a></li>
             <?php
-             if(isset($_SESSION["useruid"])){ // show something depending if the user is login or not
-                echo "<li><a href='profile.php'>Profile page</a></li>";
-                echo "<li><a href='includes/logout.php'>Log out</a></li>";
-             }
-             else{
-              echo " <li><a href='signup.php'>SIGN UP</a></li>";
-              echo " <li><a href='login.php'>LOG IN</a></li>";
-             }
+                if(isset($_SESSION["useruid"])){ // show something depending if the user is login or not
+                    echo "<li><a href='profile.php'>Profile page</a></li>";
+                    echo "<li><a href='includes/logout.php'>Log out</a></li>";
+                }
+                else{
+                    echo " <li><a href='signup.php'>SIGN UP</a></li>";
+                    echo " <li><a href='login.php'>LOG IN</a></li>";
+                }
             ?>
             <!-- <li><a href="signup.php">SIGN UP</a></li>
             <li><a href="login.php">LOG IN</a></li> -->

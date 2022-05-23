@@ -1,5 +1,5 @@
 <?php
-function emptyInputSignup($name,$email,$username,$pwd,$pwdRepeat){
+    function emptyInputSignup($name,$email,$username,$pwd,$pwdRepeat){
         $result;
         if(empty($name) || empty($email) || empty($username) || empty($pwd) || empty($pwdRepeat)){ //empty built in function
             $result = true;
@@ -61,7 +61,6 @@ function emptyInputSignup($name,$email,$username,$pwd,$pwdRepeat){
        
        if($row = mysqli_fetch_assoc($resultData)){
            return $row;
-
        }
        else{
            $result = false;
