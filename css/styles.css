@@ -39,7 +39,7 @@ a{
 
 .header{
     height: 100vh;
-    background-image: url("../images/banner.png");
+    /* background-image: url("../images/banner.png"); */
     background-size: cover;
     background-position: center;
     margin:-0.3rem 0;
@@ -61,9 +61,12 @@ h1{
 }
 
 h2{
-    display:inline-block;
+    display:block;
+    /* background-color:rgb(49, 99, 239); */
     font-size: 2rem;
+    padding: 0.1rem 0 0 0;
     color: white;
+    border-radius: 1.5rem;
 }
 
 .header__heading{
@@ -91,31 +94,43 @@ h2{
 /********************SIGN UP FORM************************/
 
 .signupForm{
-    margin: 5rem 0;
-    height: 60vh;
+    margin: 3rem 0; 
+    height:58vh;
     width: 50vh;
     /* background-color: white; */
     display:inline-block;
-    box-shadow: 5px 40px 15px  black;
+    /* box-shadow: 30px 80px 30px 0px  black; */
     border-radius: 1.5rem;
+    background-color:rgb(49, 99, 239);
    
 }
 
 .signupForm__form{
+   
     padding: 2rem;
     background-color: rgb(255, 0, 0);
     height: 100%;
     border-radius: .5rem;
+    box-shadow: 10px 10px 20px 0px  black;
+}
+
+.signupForm__h2{
+    display:block;
+    background-color:rgb(49, 99, 239);
+    font-size: 2rem;
+    padding: 0.1rem 0 0 0;
+    color: white;
+    border-radius: 1.5rem;
 }
 
 .signupForm__input{
     padding: 2%;
-    margin: 4%;
+    margin: 2%;
 }
 
 .signupForm__button{
     margin-top:5%;
-    padding: 5% 15% 5% 15%;
+    /* padding: 5% 15% 5% 15%; */
 }
 
 
@@ -123,13 +138,14 @@ h2{
 
 
 .loginForm{
-    margin: 5rem 0;
-    height: 60vh;
+    margin: 3rem 0; 
+    height:58vh;
     width: 50vh;
     /* background-color: white; */
     display:inline-block;
-    box-shadow: 5px 40px 15px  black;
+    /* box-shadow: 20px 70px 30px 0px  black; */
     border-radius: 1.5rem;
+    background-color:rgb(49, 99, 239);
    
 }
 
@@ -138,11 +154,12 @@ h2{
     background-color: rgb(255, 0, 0);
     height: 100%;
     border-radius: .5rem;
+    box-shadow: 10px 10px 20px 0px  black;
 }
 
 .loginForm__input{
-    padding: 5%;
-    margin: 14%;
+    padding: 4%;
+    margin: 10%;
 }
 
 .loginForm__button{

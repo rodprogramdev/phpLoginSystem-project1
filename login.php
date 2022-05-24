@@ -16,10 +16,10 @@
 <section>
     <div class="loginForm">
         <h2>LOG IN</h2>
-        <form class="loginForm__form" action="includes/login.inc.php" method="POST">
+        <form class="loginForm__form " action="includes/login.inc.php" method="POST">
             <input class="loginForm__input" type="text" name="uid" placeholder="Username/Email">
             <input class="loginForm__input" type="password" name="pwd" placeholder="Password">
-            <button class="loginForm__button" type="submit" name="submit">Log In</button>
+            <button class="loginForm__button btn btn-primary" type="submit" name="submit">Log In</button>
 
         </form>
     </div>

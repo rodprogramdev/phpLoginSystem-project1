@@ -15,14 +15,14 @@
 
 <section>
     <div class="signupForm">
-        <h2>SIGN UP</h2>
+        <h2 class="signupForm__h2">SIGN UP</h2>
         <form class="signupForm__form" action="includes/signup.inc.php" method="POST">
             <input  class="signupForm__input" type="text" name="name" placeholder="Full Name...">
             <input class="signupForm__input" type="text" name="email" placeholder="Email...">
             <input  class="signupForm__input" type="text" name="uid" placeholder="Username...">
             <input  class="signupForm__input" type="password" name="pwd" placeholder="Password...">
             <input  class="signupForm__input" type="password" name="pwdrepeat" placeholder="Repeat Password..."><br>
-            <button class="signupForm__button" type="submit" name="submit">Sign Up</button>
+            <button class="signupForm__button btn btn-primary" type="submit" name="submit">Sign Up</button>
 
         </form>
     </div>
