@@ -17,6 +17,9 @@ include_once 'header.php';
         <div class="carousel-item">
         <img src="images/firstaid.jpg" class="d-block w-100" alt="...">
         </div>
+        <div class="carousel-item">
+        <img src="images/banner.jpg" class="d-block w-100" alt="...">
+        </div>
 
         <div class="header__heading">
             <h1>
@@ -35,9 +38,7 @@ include_once 'header.php';
     
     </div>
 </div>
-<section>   
 
-</section>
 
     
 
