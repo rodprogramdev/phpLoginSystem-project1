@@ -242,3 +242,16 @@ h2{
     }
     
     
+    .footer{
+    
+        /* background-color: black; */
+        color:white;
+       margin-top:25%;
+        height: 20vh;
+        
+    }
+
+    .footer__para{
+        padding: 4% 0;
+    }
+
