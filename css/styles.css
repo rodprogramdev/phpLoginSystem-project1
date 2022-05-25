@@ -184,12 +184,14 @@ h2{
 
 
 /*********************/
-
+.intro{
+    height:100vh;
+}
 
 .intro-details__img{
 
     padding: 20;
-    margin-top: 100px;
+    margin-top: 6%;
     
     
     width: 35%;
@@ -246,7 +248,7 @@ h2{
     
         /* background-color: black; */
         color:white;
-       margin-top:25%;
+       
         height: 20vh;
         
     }
