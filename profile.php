@@ -1,6 +1,15 @@
 <?php 
 include_once 'header.php';
 ?>
+<div class="profile-container">
+    
+</div>
+<section>
+
+</section>
 
 
-<h1>Welcome </h1>
+
+<?php 
+include_once 'footer.php';
+?>
