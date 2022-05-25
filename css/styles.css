@@ -7,8 +7,9 @@
 }
 
 body{
+  
     text-align: center;
-    /* background-color:lightsalmon; */
+    
     font-family: 'Roboto', sans-serif;
 
 }
@@ -92,9 +93,13 @@ h2{
 }
 
 /********************SIGN UP FORM************************/
+.signupForm-container{
+    height: 100vh;
+    background-color:rgb(145, 196, 240);
+}
 
 .signupForm{
-    margin: 3rem 0; 
+    margin: 5rem 0; 
     height:58vh;
     width: 50vh;
     /* background-color: white; */
@@ -136,9 +141,13 @@ h2{
 
 /********************Log In FORM************************/
 
+.loginForm-container{
+    height: 100vh;
+    background-color:rgb(145, 196, 240);
+}
 
 .loginForm{
-    margin: 3rem 0; 
+    margin: 5rem 0; 
     height:58vh;
     width: 50vh;
     /* background-color: white; */
@@ -175,6 +184,8 @@ h2{
 
 
 /*********************/
+
+
 .intro-details__img{
 
     padding: 20;

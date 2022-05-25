@@ -14,26 +14,30 @@
 ?>
 
 <section>
-    <div class="loginForm">
-        <h2>LOG IN</h2>
-        <form class="loginForm__form " action="includes/login.inc.php" method="POST">
-            <input class="loginForm__input" type="text" name="uid" placeholder="Username/Email" autocomplete="off">
-            <input class="loginForm__input" type="password" name="pwd" placeholder="Password">
-            <button class="loginForm__button btn btn-primary" type="submit" name="submit">Log In</button>
+    <div class="loginForm-container">
+        <div class="loginForm">
+            <h2>LOG IN</h2>
+            <form class="loginForm__form " action="includes/login.inc.php" method="POST">
+                <input class="loginForm__input" type="text" name="uid" placeholder="Username/Email" autocomplete="off">
+                <input class="loginForm__input" type="password" name="pwd" placeholder="Password">
+                <button class="loginForm__button btn btn-primary" type="submit" name="submit">Log In</button>
 
-        </form>
+            </form>
+        </div>
+            
+        <?php
+            if(isset($_GET["error"])){ // check if a certain url is present 
+                if($_GET["error"] == "emptyinput"){
+                    echo "<p>Fill in all fields!</p>";
+                }
+                else if($_GET["error"] == "wronglogin"){
+                    echo "<p>Incorrect login information!</p>";
+                }
+            }
+        ?>
     </div>
-      
-<?php
-    if(isset($_GET["error"])){ // check if a certain url is present 
-        if($_GET["error"] == "emptyinput"){
-            echo "<p>Fill in all fields!</p>";
-        }
-        else if($_GET["error"] == "wronglogin"){
-            echo "<p>Incorrect login information!</p>";
-        }
-    }
-?>
+    
+
 </section>
 
 
