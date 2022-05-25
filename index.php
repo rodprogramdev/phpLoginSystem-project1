@@ -18,13 +18,13 @@ include_once 'header.php';
         <img src="images/firstaid.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-        <img src="images/banner.jpg" class="d-block w-100" alt="...">
+        <img src="images/banner.png" class="d-block w-100" alt="...">
         </div>
 
         <div class="header__heading">
             <h1>
-                <span class="header__heading--primary">Safety & </span> 
-                <span class="header__heading--secondary">Self-defense</span> 
+                <span class="header__heading--primary">Developing a  </span> 
+                <span class="header__heading--secondary">Culture of safety</span> 
             </h1>
             <h2>
             <?php
