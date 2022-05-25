@@ -49,7 +49,7 @@ include_once 'header.php';
             <p class="intro-details__para--1">Teaching Filipino Martial Arts as a cultural heritage and promoting
                 personal protection
                 has been one of my passion in life. I have taught Filipino Martial Arts here in the Philippines
-                as a part of a Community Development Program for the youth and I included it in the safety calendar
+                as a part of a <strong>"Community Development Program"</strong> for the youth and I included it in the safety calendar
                 for training of our university students as part of our safety programs as the safety officer of our
                 school.
             </p><br>
