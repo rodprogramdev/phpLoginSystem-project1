@@ -247,6 +247,32 @@ h2{
     .profile-container{
         height: 100vh;
     }
+
+
+
+
+
+    /************COURSES********************/
+   
+
+    .courses__header{
+        margin-top:1.2%;
+        color: black;
+        position: relative;
+        height: 100vh;
+        background-color:rgba(128, 128, 128, 0.736);
+      
+    
+    }
+
+    .courses__header--h1{
+        display: block;
+        position:relative;
+        font-size: 3rem;
+        padding-top:  5%;
+    }
+
+
     
     .footer{
     

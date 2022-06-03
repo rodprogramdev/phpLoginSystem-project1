@@ -24,6 +24,7 @@
             <?php
                 if(isset($_SESSION["useruid"])){ // show something depending if the user is login or not
                     echo "<li><a href='profile.php'>Profile page</a></li>";
+                    echo "<li><a href='courses.php'>Video Courses</a></li>";
                     echo "<li><a href='includes/logout.inc.php'>Log out</a></li>";
                 }
                 else{
