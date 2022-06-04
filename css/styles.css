@@ -272,6 +272,23 @@ h2{
         padding-top:  5%;
     }
 
+    .courses__lesson1{
+        display: block;
+        position:relative;
+        font-size: 3rem;
+        padding-top:  1%;
+        height: 100vh;
+    }
+
+    .courses__lesson1--h2{
+        
+        color: black;
+        display: block;
+        position:relative;
+        font-size: 2rem;
+        padding:  3%;
+    }
+
 
     
     .footer{
